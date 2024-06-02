@@ -16,7 +16,7 @@ const Faq = async () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-5">
-        {data.faq.map((faq, i) => {
+        {data?.faq?.map((faq, i) => {
           return (
             <div
               key={i}

@@ -2,11 +2,8 @@ import Image from "next/image";
 import React from "react";
 import CustomButton from "../CustomButton";
 import Link from "next/link";
-import { fetchData } from "../../utils";
 import { BgEffect } from "../BgEffect";
 const Hero = async () => {
-  const data = await fetchData();
-
   return (
     <section className="section overflow-x-hidden">
       <aside className=" relative">

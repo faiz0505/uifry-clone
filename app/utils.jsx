@@ -1,18 +1,17 @@
+"use server";
 export const fetchData = async () => {
   try {
-    const baseUrl =
-      process.env.NODE_ENV === "production"
-        ? "https://batch-system-assignment-git-main-faiz-alis-projects.vercel.app"
-        : "http://localhost:3000";
-
-    const response = await fetch(`${baseUrl}/data.json`);
-
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/data`
+    );
+    // console.log(response);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const data = await response.json();
-    return data;
+    const jsonResponse = await response.json();
+
+    return jsonResponse.data;
   } catch (error) {
     console.error("Error fetching data:", error);
     throw error;

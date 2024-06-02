@@ -18,7 +18,7 @@ const Featured = async () => {
               uifry premium
             </h1>
           </div>
-          {features.map((feature, i) => {
+          {features?.map((feature, i) => {
             return (
               <div key={i}>
                 <h4 className=" font-clashDisplayMedium text-sm">
