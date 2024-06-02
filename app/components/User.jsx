@@ -6,9 +6,9 @@ const CustomUser = ({ src, style }) => {
       className={`rounded-full border border-black bg-slate-400 relative ${style} overflow-hidden`}
     >
       <Image
-        src="/mobile_image1.png"
+        src={src}
         layout="fill"
-        objectFit="contain"
+        objectFit="cover"
         className=" object-center"
       />
     </figure>
