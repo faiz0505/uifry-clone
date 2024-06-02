@@ -1,10 +1,10 @@
 import Image from "next/legacy/image";
 import React from "react";
 import { BgEffect } from "../BgEffect";
-import { fetchData } from "@/app/utils";
 import Eclipses from "../eclipses";
+import { data } from "@/app/assets/data";
 const Featured = async () => {
-  const { features } = await fetchData();
+  const { features } = data;
 
   return (
     <>
