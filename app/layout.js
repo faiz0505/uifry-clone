@@ -1,7 +1,40 @@
-import { Inter } from "next/font/google";
+// /app/layout.js or /app/layout.tsx
+
+import localFont from "@next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// Define local fonts with CSS variables
+const clashDisplayBold = localFont({
+  src: "assets/clash-display/ClashDisplayBold.otf",
+  display: "swap",
+  variable: "--font-clash-display-bold",
+});
+const clashDisplayExtralight = localFont({
+  src: "assets/clash-display/ClashDisplayExtralight.otf",
+  display: "swap",
+  variable: "--font-clash-display-extralight",
+});
+const clashDisplayLight = localFont({
+  src: "assets/clash-display/ClashDisplayLight.otf",
+  display: "swap",
+  variable: "--font-clash-display-light",
+});
+const clashDisplayMedium = localFont({
+  src: "assets/clash-display/ClashDisplayMedium.otf",
+  display: "swap",
+  variable: "--font-clash-display-medium",
+});
+const clashDisplayRegular = localFont({
+  src: "assets/clash-display/ClashDisplayRegular.otf",
+  display: "swap",
+});
+const clashDisplaySemibold = localFont({
+  src: "assets/clash-display/ClashDisplaySemibold.otf",
+  display: "swap",
+  variable: "--font-clash-display-semibold",
+});
+
+// Load Google font
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +44,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <script
+          src="https://kit.fontawesome.com/c1dde787c5.js"
+          crossorigin="anonymous"
+        ></script>
+      </head>
+      <body
+        className={`${clashDisplayRegular.className} ${clashDisplayBold.variable} ${clashDisplayExtralight.variable} ${clashDisplayLight.variable} ${clashDisplayMedium.variable} ${clashDisplaySemibold.variable} w-full paddings overflow-x-hidden`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

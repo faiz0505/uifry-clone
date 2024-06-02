@@ -2,32 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  text-transform: capitalize;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.paddings {
+  @apply px-3 sm:px-5 md:px-16 lg:px-24;
+}
+.effect {
+  height: 120px;
+  width: 160px;
+  background: #ff5555;
+  border-radius: 100%;
+  opacity: 1;
+  filter: drop-shadow(0px 0px 50px #ff5555);
+  filter: blur(20px);
+}
+.section {
+  @apply w-full h-screen flex flex-col md:flex-row-reverse md:justify-between gap-3 justify-around items-center relative;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.eclipse {
+  @apply md:h-96 md:w-64 h-72 w-44 border border-black rounded-[130%] absolute;
 }
