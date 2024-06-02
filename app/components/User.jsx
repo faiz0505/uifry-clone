@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar } from "@nextui-org/avatar";
-import Image from "next/image";
+import Image from "next/legacy/image";
 const CustomUser = ({ src, style }) => {
   return (
     <figure
@@ -8,7 +8,7 @@ const CustomUser = ({ src, style }) => {
     >
       <Image
         src="/mobile_image1.png"
-        fill
+        layout="fill"
         objectFit="contain"
         className=" object-center"
       />

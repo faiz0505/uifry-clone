@@ -5,7 +5,9 @@
 * {
   text-transform: capitalize;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .paddings {
   @apply px-3 sm:px-5 md:px-16 lg:px-24;
 }

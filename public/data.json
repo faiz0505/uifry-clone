@@ -55,6 +55,6 @@
     }
   ],
   "faq" : [
-     {"question" : "lorem ipsum dolor sit amet, consectetur","answer" : "Lorem ipsum dolor sit amet, consectetur dolor sit amet, consectetur"}, {"question" : "lorem ipsum dolor sit amet, consectetur","answer" : "Lorem ipsum dolor sit amet, consectetur dolor sit amet, consectetur"}, {"question" : "lorem ipsum dolor sit amet, consectetur","answer" : "Lorem ipsum dolor sit amet, consectetur dolor sit amet, consectetur"}, {"question" : "lorem ipsum dolor sit amet, consectetur","answer" : "Lorem ipsum dolor sit amet, consectetur dolor sit amet, consectetur"}
+     {"question" : "lorem ipsum dolor sit amet, consectetur","answer" : "Lorem ipsum dolor sit amet, consectetur dolor sit amet, consectetur"}, {"question" : "lorem ipsum dolor sit amet, consectetur","answer" : "Lorem ipsum dolor sit amet, consectetur dolor sit amet, consectetur"}, {"question" : "lorem ipsum dolor sit amet, consectetur","answer" : "Lorem ipsum dolor sit amet, consectetur dolor sit amet, consectetur"}, {"question" : "lorem ipsum dolor sit amet, consectetur","answer" : "Lorem ipsum dolor sit amet, consectetur dolor sit amet, consectetur"},{"question" : "lorem ipsum dolor sit amet, consectetur","answer" : "Lorem ipsum dolor sit amet, consectetur dolor sit amet, consectetur"},{"question" : "lorem ipsum dolor sit amet, consectetur","answer" : "Lorem ipsum dolor sit amet, consectetur dolor sit amet, consectetur"}
   ]
 }

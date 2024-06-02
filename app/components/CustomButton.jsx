@@ -4,7 +4,7 @@ import React from "react";
 
 const CustomButton = ({ children, text, handleClick, ...props }) => {
   return (
-    <Button {...props} onPress={handleClick} onClick={() => handleClick()}>
+    <Button {...props} onClick={() => handleClick()}>
       {children || text}
     </Button>
   );

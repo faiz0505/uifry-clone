@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 import BgEffect from "../BgEffect";
 import { fetchData } from "@/app/utils";
@@ -9,7 +9,7 @@ const Featured = async () => {
   // console.log(features[0].icon);
   return (
     <>
-      <section className="section overflow-hidden">
+      <section className="section overflow-hidden" id="features">
         <aside className="md:w-3/5 flex flex-col gap-4">
           <div>
             <h5 className="text-xs font-clashDisplayMedium text-main">
@@ -37,30 +37,36 @@ const Featured = async () => {
         </aside>
         <aside className="h-1/2 w-full md:w-1/2 md:h-full relative">
           <figure className="">
-            <div className="absolute top-[12%] left-[20%]">
+            <div className="absolute top-[12%] left-[15%]">
               <Eclipses />
             </div>
             <Image
               src={"/mobile_image1.png"}
-              fill
+              layout="fill"
               objectFit="contain"
               className=" rotate-[14deg]"
             />
+            <div className="absolute -z-20 left-[15%] top-[30%]">
+              <BgEffect />
+            </div>
           </figure>
         </aside>
       </section>
       <section className="section">
-        <aside className="h-[35%] w-[85%] md:w-1/2 md:h-full relative ">
+        <aside className="h-1/2 w-full md:w-1/2 md:h-full relative ">
           <figure className="">
-            <div className="absolute top-[8%] left-[16%]">
+            <div className="absolute top-[10%] left-[14%]">
               <Eclipses />
             </div>
             <Image
               src={"/mobile_image2.png"}
-              fill
+              layout="fill"
               objectFit="contain"
               className=" rotate-[14deg]"
             />
+            <div className="absolute -z-20 left-[15%] top-[30%]">
+              <BgEffect />
+            </div>
           </figure>
         </aside>
         <aside className="md:w-3/5 flex flex-col gap-4">
@@ -76,7 +82,7 @@ const Featured = async () => {
           <div>
             <h4 className=" font-clashDisplayMedium text-lg">
               <span className="mr-2 text-main">
-                <i className="" />
+                <i class="fa-solid fa-bell"></i>
               </span>
               clever notifications
             </h4>
@@ -119,15 +125,18 @@ const Featured = async () => {
         </aside>
         <aside className="h-1/2 w-full md:w-1/2 md:h-full relative">
           <figure className="">
-            <div className="absolute top-[12%] left-[20%]">
+            <div className="absolute top-[12%] left-[15%]">
               <Eclipses />
             </div>
             <Image
               src={"/mobile_image1.png"}
-              fill
+              layout="fill"
               objectFit="contain"
               className=" rotate-[14deg]"
             />
+            <div className="absolute -z-20 left-[15%] top-[30%]">
+              <BgEffect />
+            </div>
           </figure>
         </aside>
       </section>
