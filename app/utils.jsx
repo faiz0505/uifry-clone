@@ -1,10 +1,9 @@
-"use server";
 export const fetchData = async () => {
   try {
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_BASE_URL}/api/data`
     );
-    // console.log(response);
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
