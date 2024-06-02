@@ -3,7 +3,7 @@ import React from "react";
 import CustomButton from "../CustomButton";
 import Link from "next/link";
 import { fetchData } from "../../utils";
-import BgEffect from "../bgEffect";
+import { BgEffect } from "../BgEffect";
 const Hero = async () => {
   const data = await fetchData();
 
@@ -25,7 +25,7 @@ const Hero = async () => {
       <aside className="w-full md:w-1/2 flex flex-col items-center justify-center">
         <div className="self-center flex flex-col gap-3">
           <div className="absolute md:left-80 md:top-10 top-[35%] left-[30%] -z-20">
-            <BgEffect />
+            <BgEffect key={"jhas73"} />
           </div>
           <h1 className="text-2xl md:text-3xl capitalize font-clashDisplayBold">
             make the best financial decisions

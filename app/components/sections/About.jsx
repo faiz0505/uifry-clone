@@ -1,7 +1,7 @@
 import React from "react";
 import Eclipses from "../eclipses";
 import CustomUser from "../User";
-import BgEffect from "../BgEffect";
+import { BgEffect } from "../BgEffect";
 const About = () => {
   return (
     <>
@@ -54,7 +54,7 @@ const About = () => {
             <CustomUser size="lg" style={"h-16 w-16"} />
           </div>
           <div className="absolute -z-20 left-[18%] top-[35%] opacity-60">
-            <BgEffect />
+            <BgEffect key={"sjdhfi76w7"} />
           </div>
         </aside>
       </section>

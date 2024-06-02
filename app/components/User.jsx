@@ -1,5 +1,4 @@
 import React from "react";
-import { Avatar } from "@nextui-org/avatar";
 import Image from "next/legacy/image";
 const CustomUser = ({ src, style }) => {
   return (

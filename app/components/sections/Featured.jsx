@@ -1,12 +1,11 @@
 import Image from "next/legacy/image";
 import React from "react";
-import BgEffect from "../BgEffect";
+import { BgEffect } from "../BgEffect";
 import { fetchData } from "@/app/utils";
-import Head from "next/head";
 import Eclipses from "../eclipses";
 const Featured = async () => {
   const { features } = await fetchData();
-  // console.log(features[0].icon);
+
   return (
     <>
       <section className="section overflow-hidden" id="features">
@@ -47,7 +46,7 @@ const Featured = async () => {
               className=" rotate-[14deg]"
             />
             <div className="absolute -z-20 left-[15%] top-[30%]">
-              <BgEffect />
+              <BgEffect key={"6526hgd"} />
             </div>
           </figure>
         </aside>
@@ -65,7 +64,7 @@ const Featured = async () => {
               className=" rotate-[14deg]"
             />
             <div className="absolute -z-20 left-[15%] top-[30%]">
-              <BgEffect />
+              <BgEffect key={"89sdbgfsuy"} />
             </div>
           </figure>
         </aside>
@@ -135,7 +134,7 @@ const Featured = async () => {
               className=" rotate-[14deg]"
             />
             <div className="absolute -z-20 left-[15%] top-[30%]">
-              <BgEffect />
+              <BgEffect key={"7d8sdfhiuy2"} />
             </div>
           </figure>
         </aside>

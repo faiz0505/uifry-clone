@@ -4,7 +4,7 @@ import React from "react";
 const Faq = async () => {
   const data = await fetchData();
   const applyBgClass = (index) => {
-    const bgMainIndexes = [0, 3, 4, 7, 8, 11, 12, 15, 16]; // Pattern ko follow karte hue indexes add kar sakte hain
+    const bgMainIndexes = [0, 3, 4, 7, 8, 11, 12, 15, 16];
     return bgMainIndexes.includes(index) ? "bg-main text-white" : "bg-white";
   };
   return (
